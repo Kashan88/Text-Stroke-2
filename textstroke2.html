@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Text Stroke</title>
+ <style>
+ body{
+  height: 100%;
+  background-color: #c5eef9;
+ }
+ .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+ }
+ .text{
+  display: inline-block;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.050em;
+  font-family: "Poppins",sans-serif;
+  color: #000;
+  -webkit-text-stroke: 4px #aa5ed3;
+  background: -webkit-linear-gradient(
+    top,rgba(128,128,128,1) 0%,
+    rgba(59,50,50,1) 58%,
+    rgba(59,50,50,1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+    <div class="text">AsmrPrgReact</div>
+ </div>
+</body>
+</html>
